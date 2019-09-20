@@ -3,7 +3,7 @@ server:
 
 mybatis:
   config-location: classpath:mybatis/mybatis-config.xml 
-  
+
 spring:
   application:
     name: msa-service-coffee-member
@@ -13,7 +13,12 @@ spring:
     config:
       uri: http://localhost:8888 
       name: msa-architecture-config-server
-
+#  datasource:
+#    url: jdbc:h2:mem:testdb;MODE=MySQL;DB_CLOSE_DELAY=-1
+#    username: sa
+#    password: 
+#    driver-class-name: org.h2.Driver
+    
 #Eureka Client   
 eureka:
   client:

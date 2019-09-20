@@ -27,4 +27,11 @@ public class CoffeeOrderRepository implements ICoffeeOrderRepository {
 		
 		return orderEntityJPO.getId();
 	}
+
+    @Override
+    public long coffeeOrderCount() {
+        // TODO Auto-generated method stub
+        
+        return iCoffeeOrderJpaRepository.count();
+    }
 }

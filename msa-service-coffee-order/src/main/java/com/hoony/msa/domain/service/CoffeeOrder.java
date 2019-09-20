@@ -25,4 +25,8 @@ public class CoffeeOrder implements ICoffeeOrder {
 		
 		return orderEntity.getId();
 	}
+	
+	public long coffeeOrderCount() {
+	    return iCoffeeOrderRepository.coffeeOrderCount();
+	}
 }

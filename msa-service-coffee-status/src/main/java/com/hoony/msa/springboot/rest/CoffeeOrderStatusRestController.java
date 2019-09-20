@@ -22,9 +22,19 @@ public class CoffeeOrderStatusRestController {
 	public ResponseEntity<OrderStatusDVO> coffeeOrderStatus() {
 		
 		OrderStatusDVO orderStatusDVO = iCoffeeStatusMapper.selectCoffeeOrderStatus();
-		
-		return new ResponseEntity<OrderStatusDVO>(orderStatusDVO, HttpStatus.OK);
+	    System.out.println(orderStatusDVO);
+	    System.out.println("POST Data reached");
+	    
+	    return new ResponseEntity<OrderStatusDVO>(orderStatusDVO, HttpStatus.OK);
 	}
+    
+	/* @RequestMapping(value = "/coffeeOrderStatus", method = RequestMethod.POST)
+    public ResponseEntity<OrderStatusDVO> coffeeOrderStatus() {
+        
+        OrderStatusDVO orderStatusDVO = iCoffeeStatusMapper.selectCoffeeOrderStatus();
+        
+        return new ResponseEntity<OrderStatusDVO>(orderStatusDVO, HttpStatus.OK);
+    } */
 	
 	@RequestMapping(value = "/createStatusTable", method = RequestMethod.PUT)
 	public void createStatusTable() {

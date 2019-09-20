@@ -10,9 +10,21 @@ spring:
     config:
       uri: http://localhost:8888 
       name: msa-architecture-config-server
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
 
+#spring reload
+  thymeleaf:
+    cache: false    
+  devtools:
+    livereload:
+      enabled: true
+      
 #Eureka Client   
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:9091/eureka/
+

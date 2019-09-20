@@ -9,4 +9,10 @@ dependencies {
 	compile('org.springframework.cloud:spring-cloud-starter-eureka:1.4.5.RELEASE')
 	compile('org.springframework.cloud:spring-cloud-starter-hystrix:1.4.5.RELEASE')
 	compile('org.springframework.cloud:spring-cloud-starter-feign:1.4.5.RELEASE')
+	
+	//jsp 엔진, jsp 파일 구동하기 위함
+	compile('javax.servlet:jstl')
+    compile('org.apache.tomcat.embed:tomcat-embed-jasper')
+    //jsp 자동 reload
+    compile('org.springframework.boot:spring-boot-devtools')
 }

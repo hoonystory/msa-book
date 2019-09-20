@@ -1,0 +1,1 @@
+create table if not exists member(id varchar(200) primary key, member_name varchar(20));
